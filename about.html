@@ -10,17 +10,30 @@
 		h2 {color:#33ff33; font-size:40px;}
 	</style>
 
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "rabbit1.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "rabbit2.jpg";
+  			document.getElementById("h2text").innerText = "HSIN-JIE YU";
+		}
+	</script>
+
+
 </head>
 <body>
 	<table width="70%">
 		<tr>
 			<td>
-		<img src="rabbit1.jpg"></img>
+		<img src="rabbit1.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 	</td>>
 
 	<td>
 		<h1>游欣婕</h1><br>
-		<h2>HSIN-JIE YU<h2><br>
+		<h2 id="h2text">HSIN-JIE YU<h2><br>
 	</td>
 </tr>
 </table>
